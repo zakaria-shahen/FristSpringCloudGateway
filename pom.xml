@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
+		<docker.name.prefix>mycompany</docker.name.prefix>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -70,6 +71,10 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<imageName>${docker.name.prefix}/${project.artifactId}:${project.version}</imageName>
+					<layers>
+						<enabled>true</enabled>
+					</layers>
 				</configuration>
 			</plugin>
 		</plugins>
