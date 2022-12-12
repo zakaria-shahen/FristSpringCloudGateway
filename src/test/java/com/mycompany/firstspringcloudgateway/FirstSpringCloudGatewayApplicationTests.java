@@ -1,10 +1,10 @@
-package com.mycompany.fristspringcloudgateway;
+package com.mycompany.firstspringcloudgateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FristSpringCloudGatewayApplicationTests {
+class FirstSpringCloudGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mycompany</groupId>
-	<artifactId>fristspringcloudgateway</artifactId>
+	<artifactId>firstspringcloudgateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>FristSpringCloudGateway</name>
-	<description>Frist Spring Cloud Gateway</description>
+	<name>FirstSpringCloudGateway</name>
+	<description>First Spring Cloud Gateway</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
