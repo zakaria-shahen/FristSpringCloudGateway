@@ -14,18 +14,18 @@ public class Config {
 
     Logger logger = LoggerFactory.getLogger(Config.class);
 
-    @Bean
-    public GlobalFilter addCorrelationIdPostFilter(FilterUtils filterUtils) {
-        return (exchange, chain) -> chain.filter(exchange).then(Mono.fromRunnable(
-                () -> {
-                    HttpHeaders headers = exchange.getRequest().getHeaders();
-                    String uuid = filterUtils.getCorrelationId(headers);
-                    exchange.getResponse().getHeaders().add(FilterUtils.CORRELATION_ID, uuid);
-
-                    logger.debug("add correlation Id to response: {}", uuid);
-                }
-
-        ));
-    }
+    // @Bean
+    // public GlobalFilter addCorrelationIdPostFilter(FilterUtils filterUtils) {
+    //     return (exchange, chain) -> chain.filter(exchange).then(Mono.fromRunnable(
+    //             () -> {
+    //                 HttpHeaders headers = exchange.getRequest().getHeaders();
+    //                 String uuid = filterUtils.getCorrelationId(headers);
+    //                 exchange.getResponse().getHeaders().add(FilterUtils.CORRELATION_ID, uuid);
+    //
+    //                 logger.debug("add correlation Id to response: {}", uuid);
+    //             }
+    //
+    //     ));
+    // }
 
 }

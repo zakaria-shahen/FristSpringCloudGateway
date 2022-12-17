@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
-@Order(1)
-@Component
+// @Order(1)
+// @Component
 @RequiredArgsConstructor
 public class TrackingPreFilter implements GlobalFilter {
 
